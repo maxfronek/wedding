@@ -1,0 +1,16 @@
+/* header settings */
+
+.site-header {border-bottom: 0;
+    &::before {display: block; width: 100%; height: 8px; background: var(--colorLine); content: '';}
+    .wrapper {display: flex; align-items: center; justify-content: center;}
+}
+
+.logo-monogram {width: 32px; height: auto;
+
+    @media (min-width: 1600px) {width: 48px;}
+
+}
+
+
+
+

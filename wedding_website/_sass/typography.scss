@@ -1,0 +1,37 @@
+html {font-size: 16px;}
+
+body, div, p, ol, ul, h1, h2, h3, h4, h5, h6 {color: var(--colorContentPrimary);}
+
+h1 {
+    font-family: var(--fontOgg); 
+    line-height: 1;
+    font-size: clamp(3rem, 11vw, 8rem);
+
+    .home & {margin-bottom: $spacing-unit * 2;
+    
+        @include media-query($on-laptop) {
+            margin-bottom: $spacing-unit;
+        }
+    }
+}
+
+.gradient {  
+    background: -webkit-linear-gradient(90deg, var(--colorTerraCotta), var(--colorSage));
+    background: linear-gradient(90deg, var(--colorTerraCotta), var(--colorSage));
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

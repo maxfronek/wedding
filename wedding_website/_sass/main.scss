@@ -1,0 +1,55 @@
+/* the basics */
+
+@font-face {
+    font-family: 'Ogg';
+    src: url('../assets/fonts/ogg/Ogg-Roman.woff2') format('woff2'),
+        url('../assets/fonts/ogg/Ogg-Roman.woff') format('woff'),
+        url('../assets/fonts/ogg/Ogg-Roman.ttf') format('truetype'),
+        url('../assets/fonts/ogg/Ogg-Roman.svg#Ogg-Roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ogg';
+    src: url('../assets/fonts/ogg/Ogg-Italic.woff2') format('woff2'),
+        url('../assets/fonts/ogg/Ogg-Italic.woff') format('woff'),
+        url('../assets/fonts/ogg/Ogg-Italic.ttf') format('truetype'),
+        url('../assets/fonts/ogg/Ogg-Italic.svg#Ogg-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+:root {
+    --colorSage: #8F9E9C;
+    --colorTerraCotta: #DE8760; 
+
+    --colorGrey0: #FFFFFF;
+    --colorGrey25: #FAFAFA;
+    --colorGrey100: #F5F5F5;
+    --colorGrey300: #E3E3E3;
+    --colorGrey500: #8E8E92;
+    --colorGrey600: #404040;
+    --colorGrey900: #1c1c1d;
+    --colorGrey1000: #000000;
+
+    --fontOgg: "Ogg", "Georgia", serif;
+    --fontRosella: "rosella-deco", sans-serif;
+    --fontMain: '"Libre Franklin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
+    --fontNumans: '"Numans", "Libre Franklin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";'
+
+    --colorBackground: var(--colorGrey0);
+    --colorContentPrimary: var(--colorGrey1000);
+    --colorContentSecondary: var(--colorGrey500);
+    --colorContentPrimaryB: var(--colorGrey0);
+    --colorLine: var(--colorGrey1000);
+
+}
+
+
+html, body {overflow-x: hidden;}
+
+body {background: var(--colorBackground);}
+
