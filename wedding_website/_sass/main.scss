@@ -46,10 +46,16 @@
     --colorContentPrimaryB: var(--colorGrey0);
     --colorLine: var(--colorGrey1000);
 
+    --colorLight: var(--colorGrey0);
+    --colorDark: var(--colorGrey1000);
+
+
+    --spacingUnit: 32px;
+
 }
 
 
-html, body {overflow-x: hidden;}
+// html, body {overflow-x: hidden;}
 
 body {background: var(--colorBackground);}
 

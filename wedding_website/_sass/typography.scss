@@ -1,6 +1,18 @@
 html {font-size: 16px;}
 
+body {font-family: var(--fontMain);}
+
 body, div, p, ol, ul, h1, h2, h3, h4, h5, h6 {color: var(--colorContentPrimary);}
+
+::selection {
+    color: var(--colorGrey0);
+    background-color: var(--colorTerraCotta);
+}
+
+::-moz-selection {
+    color: var(--colorGrey0);
+    background-color: var(--colorTerraCotta);
+  }
 
 h1 {
     font-family: var(--fontOgg); 
@@ -13,6 +25,10 @@ h1 {
             margin-bottom: $spacing-unit;
         }
     }
+
+    .cover & {color: var(--colorLight); text-transform: lowercase; font-style: italic;}
+
+
 }
 
 .gradient {  

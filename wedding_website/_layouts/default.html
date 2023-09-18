@@ -3,7 +3,7 @@
 
   {%- include head.html -%}
 
-  <body>
+  <body class="{% if page.url == "/" %}home-page{% else %}content-page{% endif %}">
 
     {%- include header.html -%}
 
@@ -16,6 +16,8 @@
     {% comment %} Remove footer for nowwww
     {%- include footer.html -%}
     {% endcomment %}
+
+    <script src="../assets/js/page.js" ></script>
   </body>
 
 </html>

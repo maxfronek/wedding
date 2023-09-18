@@ -19,4 +19,98 @@
     }
     .logo-monogram {filter: invert(1);}
 
+    ::selection {
+        color: var(--colorGrey0);
+        background-color: var(--colorTerraCotta);
+    }
+    
+    ::-moz-selection {
+        color: var(--colorGrey0);
+        background-color: var(--colorTerraCotta);
+      }
+
 }
+
+
+.sage {
+
+        --colorBackground: var(--colorSage);
+        --colorContentPrimary: var(--colorGrey0);
+        --colorContentSecondary: var(--colorGrey300);
+        --colorContentPrimaryB: var(--colorGrey1000);
+        --colorLine: var(--colorGrey0);
+
+
+        .gradient {    
+            background: initial;
+            background-size: initial;
+            animation: initial;
+            -webkit-background-clip: initial;
+            -webkit-text-fill-color: initial;
+
+        }
+
+        .site-header {border-bottom: 0;
+            &::before {display: block; width: 100%; height: 8px; content: '';
+                background: var(--colorGrey0);
+                background-size: initial;
+                animation: initial;
+            } // end before
+        }
+
+    .logo-monogram {filter: invert(1);}
+
+    ::selection {
+        color: var(--colorSage);
+        background-color: var(--colorGrey0);
+    }
+    
+    ::-moz-selection {
+        color: var(--colorSage);
+        background-color: var(--colorGrey0);
+      }
+
+} // end sage theme
+
+.terracotta {
+
+    --colorBackground: var(--colorTerraCotta);
+    --colorContentPrimary: var(--colorGrey0);
+    --colorContentSecondary: var(--colorGrey300);
+    --colorContentPrimaryB: var(--colorGrey1000);
+    --colorLine: var(--colorGrey0);
+
+
+    .gradient {    
+        background: initial;
+        background-size: initial;
+        animation: initial;
+        -webkit-background-clip: initial;
+        -webkit-text-fill-color: initial;
+
+    }
+
+    .site-header {border-bottom: 0;
+        &::before {display: block; width: 100%; height: 8px; content: '';
+            background: var(--colorGrey0);
+            background-size: initial;
+            animation: initial;
+        } // end before
+    }
+
+.logo-monogram {filter: invert(1);}
+
+::selection {
+    color: var(--colorGrey0);
+    background-color: var(--colorGrey1000);
+}
+
+::-moz-selection {
+    color: var(--colorGrey0);
+    background-color: var(--colorGrey1000);
+  }
+
+} // end terracotta theme
+
+
+
