@@ -10,7 +10,16 @@ layout: default
 
 
   <div class="post-content">
+
+    {% for block in page.blocks %}
+      {% if block.content %}
+      {{ block.content | markdownify }}  
+      {% endif %}
+    {% endfor %}
+
     {{ content }}
   </div>
 
 </article>
+
+<script src="../assets/js/content-pages.js"></script>

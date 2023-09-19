@@ -2,10 +2,11 @@
 
     :root {
 
-        --colorBackground: var(--colorGrey1000);
+        --colorBackground: var(--colorGrey900);
+        --colorBackgroundSecondary: var(--colorGrey600);
         --colorContentPrimary: var(--colorGrey0);
         --colorContentSecondary: var(--colorGrey500);
-        --colorContentPrimaryB: var(--colorGrey1000);
+        --colorContentPrimaryB: var(--colorGrey900);
         --colorLine: var(--colorGrey0);
 
     }
@@ -35,6 +36,7 @@
 .sage {
 
         --colorBackground: var(--colorSage);
+        --colorBackgroundSecondary: var(--colorGrey300);
         --colorContentPrimary: var(--colorGrey0);
         --colorContentSecondary: var(--colorGrey300);
         --colorContentPrimaryB: var(--colorGrey1000);
@@ -75,6 +77,7 @@
 .terracotta {
 
     --colorBackground: var(--colorTerraCotta);
+    --colorBackgroundSecondary: var(--colorGrey300);
     --colorContentPrimary: var(--colorGrey0);
     --colorContentSecondary: var(--colorGrey300);
     --colorContentPrimaryB: var(--colorGrey1000);

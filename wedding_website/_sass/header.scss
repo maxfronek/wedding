@@ -44,6 +44,11 @@
         &.bottom {top: 12px; transform: translateY(0);}
     } // end default patty
 
+    .content-page & {
+        &::after {color: var(--colorLight);}
+        .patty {background: var(--colorLight);}
+    } // end content-page stylings
+
     &.hovered {
         cursor: pointer; pointer-events: all;
         &::after {opacity: 1;  transform: translateX(0px);}
