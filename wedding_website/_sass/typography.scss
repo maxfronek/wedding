@@ -18,6 +18,9 @@ h1 {
     font-family: var(--fontOgg); 
     line-height: 1;
     font-size: clamp(3rem, 11vw, 8rem);
+    letter-spacing: -1px;
+
+    @media (min-width: 767px) {letter-spacing: -3px;}
 
     .home & {margin-bottom: $spacing-unit * 2;
     
@@ -32,12 +35,13 @@ h1 {
 }
 
 .gradient {  
-    background: -webkit-linear-gradient(90deg, var(--colorTerraCotta), var(--colorSage));
-    background: linear-gradient(90deg, var(--colorTerraCotta), var(--colorSage));
+    background: -webkit-linear-gradient(90deg, var(--colorSage), var(--colorTerraCotta));
+    background: linear-gradient(90deg, var(--colorSage), var(--colorTerraCotta));
     background-size: 400% 400%;
     animation: gradient 5s ease infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    display: inline-block; padding-top: 0.7rem; margin-top: -0.7rem;
 }
 
 @keyframes gradient {
@@ -47,7 +51,7 @@ h1 {
 	50% {
 		background-position: 100% 50%;
 	}
-	100% {
+    100% {
 		background-position: 0% 50%;
 	}
 }

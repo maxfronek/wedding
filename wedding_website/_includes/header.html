@@ -1,10 +1,14 @@
 <header class="site-header" role="banner">
 
+  {%- include menu.html -%}
   <div class="wrapper">
+
+    {% include hamburger.html %}
+
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
-      <img class="logo-monogram" src="{{ site.logo | relative_url }}" />
+      <img class="logo-monogram" id="logo" src="{{ site.logo | relative_url }}" />
     </a>
     {%- if page_paths -%}
     {% comment %} Remove text menu nav
@@ -30,4 +34,5 @@
       {% endcomment %}
     {%- endif -%}
   </div>
+
 </header>

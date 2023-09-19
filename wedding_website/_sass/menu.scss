@@ -1,0 +1,62 @@
+.main-menu {background: color-mix(in srgb, var(--colorDark) 90%, transparent); color: var(--colorLight);
+
+    position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: center; flex-direction: column; backdrop-filter: blur(8px); z-index: 8;
+
+    transform: translateY(-100vh); transition: .3s all ease-in-out;
+
+    &.opened {transform: translateY(0);}
+
+    ul {margin-left: 0; text-align: center; columns: 1; column-gap: 4vw;
+
+        &:before {content: ''; width: 64px; height: 4px; background: var(--colorLight);}
+    
+        li {
+            list-style: none; margin-bottom: 1rem;
+
+            a {
+                text-decoration: none; font-size: clamp(1.6rem, 4vw, 2rem); font-family: var(--fontOgg); font-style: italic; color: var(--colorLight); text-transform: lowercase; transition: .15s all ease-in-out;
+
+                background: linear-gradient(90deg, var(--colorLight), var(--colorLight));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                padding-top: 0.7rem; margin-top: -0.7rem;
+
+                &:hover, &:focus {
+                    color: var(--colorTerraCotta);
+                    background: -webkit-linear-gradient(90deg, var(--colorTerraCotta), var(--colorSage));
+                    background: linear-gradient(90deg, var(--colorTerraCotta), var(--colorSage));
+                    background-size: 400% 400%;
+                    animation: gradient 5s ease infinite;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    
+                } // end a:hover a:focus
+
+            } // end a
+
+            &.inactive {
+                a {
+                    opacity: .24; cursor: default; text-decoration: line-through;
+                    &:hover, &:focus {color: var(--colorLight);}
+                }
+            } // end li.inactive
+
+            @media (min-width: 767px) {
+                margin-bottom: 2rem;
+            }
+
+        } // end main-menu ul li
+
+        @media (min-width: 500px) {
+            columns: 2;
+        }
+
+        @media (min-width: 900px) {
+            columns: 3;
+        }
+
+
+    } // end main-menu ul
+
+} // end main-menu
+
