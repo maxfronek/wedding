@@ -14,15 +14,19 @@ body, div, p, ol, ul, h1, h2, h3, h4, h5, h6 {color: var(--colorContentPrimary);
     background-color: var(--colorTerraCotta);
   }
 
+strong, b {font-weight: 700;}
+em, i {font-style: italic;}
+
 h1 {
     font-family: var(--fontOgg); 
     line-height: 1;
-    font-size: clamp(3rem, 11vw, 8rem);
+    font-size: clamp(2rem, 11vw, 4rem);
     letter-spacing: -1px;
 
     @media (min-width: 767px) {letter-spacing: -3px;}
 
-    .home & {margin-bottom: $spacing-unit * 2;
+    .home & {margin-bottom: $spacing-unit * 2; 
+        font-size: clamp(3rem, 11vw, 8rem);
     
         @include media-query($on-laptop) {
             margin-bottom: $spacing-unit;
@@ -30,6 +34,11 @@ h1 {
     }
 
     .cover & {color: var(--colorLight); text-transform: lowercase; font-style: italic;}
+
+    &.whenwhere {text-indent: -2vw; font-size: clamp(2.6rem, 5vw, 6rem); line-height: 1;
+        .smaller {font-size: 67%; text-indent: 10vw; display: inline-block;}
+    }
+
 
 
 }
@@ -41,7 +50,8 @@ h1 {
     animation: gradient 5s ease infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    display: inline-block; padding-top: 0.7rem; margin-top: -0.7rem;
+    display: inline-block; padding-top: 0.7rem; margin-top: -0.7rem; 
+    padding-left: 1.2rem; margin-left: -1.2rem;
 }
 
 @keyframes gradient {
@@ -55,3 +65,9 @@ h1 {
 		background-position: 0% 50%;
 	}
 }
+
+h2 {
+    .page-content & { font-size: clamp(1.6rem, 7vw, 3.6rem); }
+    
+    font-family: var(--fontOgg); letter-spacing: -2px; text-transform: lowercase;
+} // end h2

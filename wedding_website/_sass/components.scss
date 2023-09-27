@@ -69,10 +69,19 @@
     
         a {
             
-            .big-links__linktext {display: flex; align-items: flex-start; align-items: first baseline;bottom: -2.5rem; z-index: 1; position: relative;width: max-content; }
+            --fontSize: 5rem;
+
+            .big-links__linktext {display: flex; align-items: flex-start; align-items: first baseline;bottom: -2rem; z-index: 1; position: relative;width: max-content; }
             
-            font-family: var(--fontOgg); font-style: italic; font-size: 5rem; color: var(--colorContentPrimary); text-transform: lowercase; position: relative; margin-left: $spacing-unit; margin-right: auto; display: flex; align-items: first baseline; justify-content: flex-start; width: 100%; height: 100%; bottom: 0;
+            font-family: var(--fontOgg); font-style: italic; font-size: var(--fontSize); color: var(--colorContentPrimary); text-transform: lowercase; position: relative; margin-left: $spacing-unit; margin-right: auto; display: flex; align-items: first baseline; justify-content: flex-start; width: 100%; height: 100%; bottom: 0;
         
+
+            /* appear vertically centered in Firefox */
+            @-moz-document url-prefix() {
+                .big-links__linktext {bottom: -2.5rem;}
+            }
+
+
             &:hover, &:focus {text-decoration: none;
             
                 .linklist-gallery {opacity: 1;}
@@ -120,12 +129,38 @@
 
         li {
             .linklist-gallery {top: 0rem;}
-            a {font-size: 3rem; bottom: 0rem;
+            a {font-size: 2.625rem; bottom: 0rem;
             
-                .big-links__linktext {bottom: -1.5rem;}
+                .big-links__linktext {bottom: -1.125rem;}
             }
         }
         .coming-soon {order: -1;}
     }
+
+}
+
+
+
+/* swiper page galleries */
+
+
+.swiper {
+
+    .page-content & {
+        overflow: visible;padding-bottom: 3rem;margin-bottom: 2rem;
+        .swiper-slide {max-width: 900px; height: 300px;
+            img {width: 100%; height: 100%; object-fit: cover;}
+
+            @media (min-width: 767px) {
+                height: 400px;
+            } // end MQ min-width
+        } // end .page-content .swiper-slide
+
+        .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+            bottom: 0;
+        } // end long annoying button thing
+
+
+    } // end page.content &
 
 }

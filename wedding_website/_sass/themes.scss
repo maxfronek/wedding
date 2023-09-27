@@ -18,7 +18,10 @@
             animation: gradient 15s ease infinite;
         } // end before
     }
-    .logo-monogram {filter: invert(1);}
+    .logo-monogram {filter: invert(1);
+
+        .content-page .header-bg & {filter: invert(1);}
+    }
 
     ::selection {
         color: var(--colorGrey0);
@@ -29,6 +32,8 @@
         color: var(--colorGrey0);
         background-color: var(--colorTerraCotta);
       }
+
+
 
 }
 

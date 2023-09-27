@@ -5,21 +5,64 @@ layout: default
 
   <header class="cover">
     <img src="{{ page.cover | relative_url }}" {% if page.cover_align %}class="{{ page.cover_align }}"{% endif %} />
+    {% if page.title == "When & Where" %}
+    <h1 class="whenwhere">June Eighth<br /><span class="smaller">Twenty Twenty Four</span></h1>
+    {% else %}
     <h1 class="">{{ page.title | escape }}</h1>
+    {% endif %}
   </header>
 
 
   <div class="post-content">
 
     {% for block in page.blocks %}
-      {% if block.content %}
-      {{ block.content | markdownify }}  
-      {% endif %}
+
+    {% if block.block_id == 'heading' %}
+
+      <div class="heading-wrapper">
+        <h2 class="{% if block.gradient %}gradient{% endif %}">{% if block.italic %}<em>{% endif %}{{ block.heading | escape }}{% if block.italic %}</em>{% endif %}</h2>
+        {% if block.content %}
+        {{ block.content | markdownify }}  
+        {% endif %}
+      </div>
+  
+    {% elsif block.block_id == "gallery" %}
+      <!-- Slider main container -->
+      <div class="swiper gallery" data-galleryId="{{ block.gallery_id }}">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          {% for image in block.images %}
+          <div class="swiper-slide">
+            <img src="{{ image.img_url | relative_url }}" />
+          </div>
+          {% endfor %}
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+
+    {% else %}  
+
+    {% if block.heading %}
+    <h3 class="{% if block.gradient %}gradient{% endif %}">{% if block.italic %}<em>{% endif %}{{ block.heading | escape }}{% if block.italic %}</em>{% endif %}</h3>
+    {% endif %}
+
+    {% if block.content %}
+    {{ block.content | markdownify }}  
+    {% endif %}
+
+
+    {% endif %}
+
     {% endfor %}
+
+
 
     {{ content }}
   </div>
 
 </article>
+
 
 <script src="../assets/js/content-pages.js"></script>
