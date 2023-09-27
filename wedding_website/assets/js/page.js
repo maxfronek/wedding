@@ -27,14 +27,16 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
                 menu.classList.add('opened');
                 logo.classList.add('reversed');
                 menuOpen = true;
-                console.log(menuOpen);
+                document.body.classList.add("lock");
+                // console.log(menuOpen);
             } else if (menuOpen === true) {
                 console.log('Close trigger clicked');
                 menuTrigger.classList.remove('opened');
                 menu.classList.remove('opened');
                 logo.classList.remove('reversed');
+                document.body.classList.remove("lock");
                 menuOpen = false;
-                console.log(menuOpen);
+                // console.log(menuOpen);
             }
         }); // end menuTrigger click event handler
 
@@ -44,7 +46,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 ScrollTrigger.create({
     trigger: 'main',
     // markers: true,
-    start: "200px top",
+    start: "72px top",
     id: 'one',
     toggleClass: { targets: ".site-header", className: "header-bg" }
   });

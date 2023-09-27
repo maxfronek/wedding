@@ -1,6 +1,16 @@
 <footer class="site-footer h-card">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
+{% comment %}
+  <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
+    <img class="logo-monogram" id="logo" src="{{ site.logo | relative_url }}" />
+  </a>
+{% endcomment %}
+  <p>
+    June 8, 2024 // Sun Valley, ID
+  </p>
+
+  {% comment %}
   <div class="wrapper">
 
     <h2 class="footer-heading">{{ site.title | escape }}</h2>
@@ -31,5 +41,5 @@
     </div>
 
   </div>
-
+{% endcomment %}
 </footer>

@@ -212,6 +212,8 @@
   article {
     header {min-height: 300px; height: 35vh; position: relative; width: 100vw; margin-left: calc(var(--spacingUnit) * -1);
       h1 {position: absolute; top: 50%; left: 50%; margin-bottom: 0; transform: translateX(-50%) translateY(-50%);
+
+
         @media (min-width: 1200px) {}
 
         &.whenwhere {
@@ -247,19 +249,21 @@
       .tooltip {position: fixed;top: -2rem; left: -2rem; max-width: 320px; box-shadow: 4px 4px 16px rgba(64,64,64,.32); border-radius: 8px; font-size: 0.625rem; padding: 8px; background: var(--colorSage); color: var(--colorLight); z-index: 2;}
 
       @media (min-width: 767px) {
-        margin-bottom: 2rem;
+        margin-bottom: 2rem; line-height: 1.8;
       } // end 767 mq
       @media (min-width: 1600px) {
-        line-height: 1.8; font-size: 1.125rem;
+        line-height: 2; font-size: 1.25rem; max-width: 900px;
       }
     }
 
     .heading-wrapper {max-width: 900px; margin: 0 auto 2rem; text-align: center; 
       h2 {margin-left: -3vw; margin-bottom: 0; line-height: 1;}
-      p {margin-right: -3vw; margin-top: 0; text-transform: uppercase; color: var(--colorContentSecondary); letter-spacing: 1px;}
+      p {margin-right: -45vw; margin-top: 0; text-transform: uppercase; color: var(--colorContentSecondary); letter-spacing: 1px; font-size: 0.625rem;}
 
       @media (min-width: 767px) {
         margin-bottom: 4rem;
+
+        p {margin-right: -3vw;}
       }
 
     }
@@ -291,9 +295,8 @@
 }
 
 .post-content {
-  margin-bottom: $spacing-unit;
 
-  margin-top: calc(var(--spacingUnit) * 2);
+  margin: calc(var(--spacingUnit) * 2) auto $spacing-unit;
 
   max-width: 1168px;
 
@@ -322,7 +325,15 @@
     }
   }
 
-  p {max-width: 900px; margin: 0 auto;}
+  p {max-width: 740px; margin: 0 auto;
+  
+    @media (min-width: 1599px) {
+      font-size: 1.25rem; line-height: 2; max-width: 900px; margin-bottom: 2rem;
+    }
+  
+  }
+
+
 }
 
 

@@ -64,3 +64,6 @@ body {overflow-x: hidden;}
 
 body {background: var(--colorBackground);}
 
+html, body {
+    &.lock {overflow: hidden;}
+}

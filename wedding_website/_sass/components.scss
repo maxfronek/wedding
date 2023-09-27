@@ -20,7 +20,7 @@
         gap: 0; 
     }
 
-    .marquee-content {display: flex; justify-content: space-around; min-width: 100%; align-items: center; flex-shrink: 0; 
+    .marquee-content {display: flex; justify-content: space-around; min-width: 100%; align-items: flex-start; flex-shrink: 0; 
         animation: date-marquee 9s linear infinite;}
 
     span {text-transform: uppercase; letter-spacing: 1px; display: flex; flex: 0 0 auto; margin-right: $spacing-unit/2; align-items: center; font-size: 1.25rem; font-family: var(--fontNumans);
@@ -111,6 +111,10 @@
         @include media-query($on-laptop) {
             margin: 0 $spacing-unit / 2;
         }
+
+        @include media-query($on-palm) {
+            font-size: 0.5rem;
+        }
     
     }
 
@@ -122,7 +126,11 @@
 
             .linklist-gallery {margin-left: calc((var(--spacingUnit) / 2) * -1);}
 
-            a {font-size: 5rem; margin-left: $spacing-unit / 2; margin-right: auto; bottom: 0rem;
+            a { 
+                
+                --fontSize: 4rem;
+                
+                margin-left: $spacing-unit / 2; margin-right: auto; bottom: 0.375rem;
             
             &.disabled {opacity: .40; cursor: default; pointer-events: none;}
 
@@ -140,7 +148,7 @@
 
         li {
             .linklist-gallery {top: 0rem;}
-            a {font-size: 2.625rem; bottom: 0rem;
+            a {font-size: 2.625rem; bottom: 0rem; padding-top: 1rem;
             
                 .big-links__linktext {bottom: -1.125rem;}
             }
@@ -150,7 +158,9 @@
 
     @media (max-width: 500px) {
         li {
-            a {font-size: 2.25rem;}
+            a {font-size: 2rem;
+                .big-links__linktext {bottom: -0.75rem;}
+            }
         }
     }
 

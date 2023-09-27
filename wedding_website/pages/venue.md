@@ -9,17 +9,17 @@ blocks:
     heading: The Valley Club
     content: Sun Valley, Idaho
     italic: true
-  - block_id: gallery
-    gallery_id: sunvalley
-    images:
-      - img_url: "./assets/images/vc/valleyclub-1.jpg"
-        alt: The Valley Club
-      - img_url: "./assets/images/vc/valleyclub-3.jpg"
-        alt: The Valley Club
-      - img_url: "./assets/images/vc/valleyclub-4.jpg"
-        alt: The Valley Club
-  - block_id: text
-    content:  The Valley Club in Sun Valley Idaho
+#  - block_id: gallery
+#    gallery_id: sunvalley
+#    images:
+#      - img_url: "./assets/images/vc/valleyclub-1.jpg"
+#        alt: The Valley Club
+#      - img_url: "./assets/images/vc/valleyclub-3.jpg"
+#        alt: The Valley Club
+#      - img_url: "./assets/images/vc/valleyclub-4.jpg"
+#        alt: The Valley Club
+#  - block_id: text
+#    content:  The Valley Club in Sun Valley Idaho
 ---
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim.
+<p class="disclaimer">More details about Sun Valley and our venue will be added in the days to come.</p>

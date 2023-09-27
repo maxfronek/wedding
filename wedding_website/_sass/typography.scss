@@ -1,6 +1,6 @@
 html {font-size: 16px;}
 
-body {font-family: var(--fontMain);}
+body {font-family: var(--fontMain); font-weight: 500;}
 
 body, div, p, ol, ul, h1, h2, h3, h4, h5, h6 {color: var(--colorContentPrimary);}
 
@@ -35,8 +35,12 @@ h1 {
 
     .cover & {color: var(--colorLight); text-transform: lowercase; font-style: italic;}
 
-    &.whenwhere {text-indent: -2vw; font-size: clamp(2.6rem, 5vw, 6rem); line-height: 1;
+    &.whenwhere {text-indent: 25vw; font-size: clamp(2.6rem, 5vw, 6rem); line-height: 1; width: 100%;
         .smaller {font-size: 67%; text-indent: 10vw; display: inline-block;}
+
+        @media (min-width: 767px) {
+            text-indent: -2vw; width: max-content;
+        }
     }
 
 
@@ -67,7 +71,10 @@ h1 {
 }
 
 h2 {
-    .page-content & { font-size: clamp(1.6rem, 7vw, 3.6rem); }
+    .page-content & { font-size: clamp(2.25rem, 7vw, 3.6rem); }
     
-    font-family: var(--fontOgg); letter-spacing: -2px; text-transform: lowercase;
+    font-family: var(--fontOgg); letter-spacing: -1px; text-transform: lowercase;
 } // end h2
+
+
+.disclaimer {color: var(--colorContentSecondary); font-size: 0.75rem; text-align: center; margin-top: 4rem;}
