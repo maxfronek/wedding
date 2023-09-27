@@ -16,7 +16,7 @@
 
 
     &.header-bg {background: color-mix(in srgb, var(--colorBackground) 80%, transparent); 
-        backdrop-filter: blur(4px);}
+        -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px);}
 
 }
 

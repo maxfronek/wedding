@@ -23,11 +23,12 @@
     .marquee-content {display: flex; justify-content: space-around; min-width: 100%; align-items: center; flex-shrink: 0; 
         animation: date-marquee 9s linear infinite;}
 
-    span {text-transform: uppercase; letter-spacing: 1px; display: flex; flex: 0 0 auto; margin-right: $spacing-unit/2; align-items: center; font-size: 1.5rem;
+    span {text-transform: uppercase; letter-spacing: 1px; display: flex; flex: 0 0 auto; margin-right: $spacing-unit/2; align-items: center; font-size: 1.25rem; font-family: var(--fontNumans);
     
         &::after {content: " "; display: inline-flex; height: 1px; background: var(--colorLine); width: 64px; margin-left: $spacing-unit/2;}
 
         @include media-query($on-laptop) {font-size: 1rem;}
+        @include media-query($on-palm) {font-size: 0.75rem;}
     }
 
 }
@@ -93,7 +94,11 @@
         &:nth-of-type(even) {
 
             .linklist-gallery {margin-left: 0;}
-            a {margin-left: auto; margin-right: $spacing-unit; justify-content: flex-end;}
+
+            @media (min-width: 767px) {
+                a {margin-left: auto; margin-right: $spacing-unit; justify-content: flex-end;}
+            }
+
         }
 
 
@@ -117,10 +122,16 @@
 
             .linklist-gallery {margin-left: calc((var(--spacingUnit) / 2) * -1);}
 
-            a {font-size: 5rem; margin-left: $spacing-unit / 2; margin-right: auto; bottom: 0rem;}
+            a {font-size: 5rem; margin-left: $spacing-unit / 2; margin-right: auto; bottom: 0rem;
+            
+            &.disabled {opacity: .40; cursor: default; pointer-events: none;}
+
+            }
             &:nth-of-type(even) {
 
-                a {margin-right: $spacing-unit / 2; margin-left: auto;}
+              .linklist-gallery {margin-left: calc((var(--spacingUnit) / 2) * -1);}
+
+              //  a {margin-right: $spacing-unit / 2; margin-left: auto;}
             }
         }
     }
@@ -134,7 +145,13 @@
                 .big-links__linktext {bottom: -1.125rem;}
             }
         }
-        .coming-soon {order: -1;}
+        // .coming-soon {order: -1;}
+    }
+
+    @media (max-width: 500px) {
+        li {
+            a {font-size: 2.25rem;}
+        }
     }
 
 }
