@@ -89,6 +89,9 @@
 
             }
 
+
+            &.disabled {opacity: .40; cursor: default; pointer-events: none;}
+
         }
 
         &:nth-of-type(even) {
@@ -132,7 +135,6 @@
                 
                 margin-left: $spacing-unit / 2; margin-right: auto; bottom: 0.375rem;
             
-            &.disabled {opacity: .40; cursor: default; pointer-events: none;}
 
             }
             &:nth-of-type(even) {
