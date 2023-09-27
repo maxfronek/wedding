@@ -296,9 +296,13 @@
 
 .post-content {
 
-  margin: calc(var(--spacingUnit) * 2) auto $spacing-unit;
+  margin: calc(var(--spacingUnit) / 2) auto $spacing-unit;
 
   max-width: 1168px;
+
+  @media (min-width: 767px) {
+    margin: calc(var(--spacingUnit) * 2) auto $spacing-unit;
+  }
 
 
   h2 {
