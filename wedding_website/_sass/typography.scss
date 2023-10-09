@@ -4,6 +4,11 @@ body {font-family: var(--fontMain); font-weight: 500;}
 
 body, div, p, ol, ul, h1, h2, h3, h4, h5, h6 {color: var(--colorContentPrimary);}
 
+a, a:visited {color: var(--colorTerraCotta); transition: .15s all ease-in-out;
+
+    &:hover, &:focus {color: var(--colorContentPrimary); text-decoration-color: var(--colorTerraCotta);}
+}
+
 ::selection {
     color: var(--colorGrey0);
     background-color: var(--colorTerraCotta);
@@ -48,10 +53,12 @@ h1 {
 }
 
 .gradient {  
-    background: -webkit-linear-gradient(90deg, var(--colorSage), var(--colorTerraCotta));
-    background: linear-gradient(90deg, var(--colorSage), var(--colorTerraCotta));
+    // background: -webkit-linear-gradient(90deg, var(--colorSage), var(--colorTerraCotta));
+    // background: linear-gradient(90deg, var(--colorSage), var(--colorTerraCotta));
+    background: -webkit-linear-gradient(270deg, rgba(143,158,156,1) 0%, rgba(143,119,140,1) 36%, rgba(213,181,168,1) 69%, rgba(143,158,156,1) 100%);
+    background: linear-gradient(270deg, rgba(143,158,156,1) 0%, rgba(143,119,140,1) 36%, rgba(213,181,168,1) 69%, rgba(143,158,156,1) 100%);
     background-size: 400% 400%;
-    animation: gradient 5s ease infinite;
+    animation: gradient 9s ease infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block; padding-top: 0.7rem; margin-top: -0.7rem; 
@@ -60,13 +67,13 @@ h1 {
 
 @keyframes gradient {
 	0% {
-		background-position: 0% 50%;
+		background-position: 0% 0%;
 	}
 	50% {
 		background-position: 100% 50%;
 	}
     100% {
-		background-position: 0% 50%;
+		background-position: 0% 100%;
 	}
 }
 
@@ -74,7 +81,22 @@ h2 {
     .page-content & { font-size: clamp(2.25rem, 7vw, 3.6rem); margin-top: 2rem; }
     
     font-family: var(--fontOgg); letter-spacing: -1px; text-transform: lowercase;
+
+    &.city {text-transform: none;}
+
+
 } // end h2
 
 
+h3 {
+
+    font-family: var(--fontMain); font-weight: 800; font-size: 1.5rem; color: var(--colorContentPrimary);
+
+    &.hotel-heading {border-top: 2px solid var(--colorLine); padding-top: 8px; width: 100%; max-width: 746px; margin-bottom: 0.5rem;}
+
+
+}
+
 .disclaimer {color: var(--colorContentSecondary); font-size: 0.75rem; text-align: center; margin-top: 4rem;}
+
+.disabled {color: var(--colorContentSecondary);}

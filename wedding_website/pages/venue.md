@@ -22,4 +22,6 @@ blocks:
 #    content:  The Valley Club in Sun Valley Idaho
 ---
 
+{% include sunvalley-map.html %}
+
 <p class="disclaimer">More details about Sun Valley and our venue will be added in the days to come.</p>

@@ -12,11 +12,17 @@
             <div class="big-links__linktext">When &amp; Where</div>
             {% include linklist--venue.html %}
         </a></li>
-        <li><a href="#" class="disabled">
-            <div class="big-links__linktext">Lodging <span class="coming-soon">Coming Soon</span></div>
+        <li><a href="/lodging/">
+            <div class="big-links__linktext">Lodging</div>
+            {% include linklist--lodging.html %}
         </a></li>
-        <li><a href="#" class="disabled">
+        <li><a href="/travel/" data-name="travel">
+            <div class="big-links__linktext">Travel</div>
+            {% include linklist--travel.html %}
+        </a></li>
+        <li><a class="disabled" {% comment %}href="/things-to-do/"{% endcomment %}>
             <div class="big-links__linktext">Things to do <span class="coming-soon">Coming Soon</span></div>
+            {% comment %}{% include linklist--things.html %}{% endcomment %}
         </a></li>
         <li><a href="#" class="disabled">
             <div class="big-links__linktext">Wedding Party <span class="coming-soon">Coming Soon</span></div>

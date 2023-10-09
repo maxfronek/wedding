@@ -25,7 +25,25 @@ layout: default
         {{ block.content | markdownify }}  
         {% endif %}
       </div>
+
+    {% elsif block.block_id == "image" %}
+    <img class="article-image" src="{{ block.img_url }}" />  
+
+    {% elsif block.block_id == "city" %}  
+
+    <h2 class="city {% if block.gradient %}gradient{% endif %}">{% if block.italic %}<em>{% endif %}{{ block.content | escape }}{% if block.italic %}</em>{% endif %}</h2>
   
+    {% elsif block.block_id == "hotel" %}
+      <div class="hotel">
+        <h3 class="hotel-heading">{{ block.heading }}</h3>
+        <p>{{ block.content }}</p>
+        {% if block.price %}<strong class="price">{{ block.price }}</strong>{% endif %}
+        {% if block.website and block.website_link %}<div><a target="_blank" href="{{ block.website_link }}">{{ block.website }}</a></div>{% endif %}
+        {% if block.address %}<div class="address"><strong>{{ block.address }}</strong>{% if block.address_link %}<a href="{{ block.address_link }}" target="_blank">View on map</a>{% endif %}</div> {% endif %}
+      </div>
+
+
+
     {% elsif block.block_id == "gallery" %}
       <!-- Slider main container -->
       <div class="swiper gallery" data-galleryId="{{ block.gallery_id }}">
@@ -52,6 +70,9 @@ layout: default
     {{ block.content | markdownify }}  
     {% endif %}
 
+    {% if block.address %}
+    <strong>Address:</strong><a href="{{ block.address | prepend: " " }}
+    {% endif %}
 
     {% endif %}
 

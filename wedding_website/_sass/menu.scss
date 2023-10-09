@@ -23,11 +23,14 @@
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 padding-top: 0.7rem; margin-top: -0.7rem;
+                padding-right: 1rem; margin-right: -1rem;
 
                 &:hover, &:focus {
-                    color: var(--colorTerraCotta);
-                    background: -webkit-linear-gradient(90deg, var(--colorTerraCotta), var(--colorSage));
-                    background: linear-gradient(90deg, var(--colorTerraCotta), var(--colorSage));
+                    color: var(--colorSage);
+                    // background: -webkit-linear-gradient(90deg, var(--colorTerraCotta), var(--colorSage));
+                    // background: linear-gradient(90deg, var(--colorTerraCotta), var(--colorSage));
+                    background: -webkit-linear-gradient(270deg, rgba(143,158,156,1) 0%, rgba(143,119,140,1) 36%, rgba(213,181,168,1) 69%, rgba(143,158,156,1) 100%);
+                    background: linear-gradient(270deg, rgba(143,158,156,1) 0%, rgba(143,119,140,1) 36%, rgba(213,181,168,1) 69%, rgba(143,158,156,1) 100%);
                     background-size: 400% 400%;
                     animation: gradient 5s ease infinite;
                     -webkit-background-clip: text;
@@ -59,7 +62,7 @@
         }
 
         @media (min-width: 900px) {
-            columns: 3;
+          //  columns: 3;
         }
 
 
