@@ -243,7 +243,7 @@
       a {
         text-decoration: underline; text-decoration-color: var(--colorContentPrimary); color: var(--colorContentPrimary); transition: .15s all ease-in-out;
         &[data-tooltip] {position: relative;}
-        &:hover, &:focus {color: var(--colorTerraCotta); text-decoration-color: var(--colorTerraCotta);}
+        &:hover, &:focus {color: var(--colorGrape); text-decoration-color: var(--colorGrape);}
 
       }
 

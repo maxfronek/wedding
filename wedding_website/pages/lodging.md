@@ -14,11 +14,17 @@ blocks:
     content: Ketchum
   - block_id: hotel
     heading: The Limelight
-    content: Our recommended hotel is the Limelight, found at the corner of Main St. and 4th in Ketchum. It's close to River Run, downtown Ketchum, and our venue.  <!--is <strong>where one of our shuttles will be arriving and departing from</strong>. -->With an on-site bar and lounge, it's a great home base for all of the festivities.
+    featured: true
+    content: | 
+      Our recommended hotel is the Limelight, found at the corner of Main St. and 4th in Ketchum. It's close to River Run, downtown Ketchum, and our venue. With an on-site bar and lounge, it's a great home base for all of the festivities.
+    featured_hotel: |
+      The Limelight is also our preferred hotel for the event! Alyse &amp; Max will be staying there through the weekend, and we have a <strong>special discounted rate</strong> available for our guests. The hotel strongly encourages guests to call <a href="tel:(888)2183282" target="_blank">(888)218-3282</a> and mention <span class="" style="font-style:italic;">The Stark/Fronek Wedding</span> for the discount. You can also email <a href="mailto:ketchumreservations@limelighthotels.com" target="_blank">ketchumreservations@limelighthotels.com</a> or visit <a href="https://www.limelighthotels.com/ketchum/reservations#/booking/step-1?promo=STARKFRONEK" target="_blank">their booking website</a> to make your reservation.
     price: $$<span class="disabled">$$</span>
     address: 151 Main St S, Ketchum, ID 83340
     address_link: |
-      https://www.google.com/maps/place/Limelight+Hotel/@43.6801717,-114.3669387,17z/data=!4m13!1m2!2m1!1sHotels!3m9!1s0x54a982b973cc9161:0x2ac63cc1505f7bd3!5m2!4m1!1i2!8m2!3d43.6791018!4d-114.3624346!15sCgZIb3RlbHOSAQVob3RlbOABAA!16s%2Fg%2F11bzq3hbyc?entry=ttu
+      https://www.google.com/maps/place/Limelight+Hotel/@43.6801717,-114.3669387,17z/data=!4m22!1m9!2m8!1sHotels!5m5!5m4!1s2024-06-06!2i3!4m1!1i2!6e3!3m11!1s0x54a982b973cc9161:0x2ac63cc1505f7bd3!5m4!1s2024-06-06!2i3!4m1!1i2!8m2!3d43.6791018!4d-114.3624346!15sCgZIb3RlbHOSAQVob3RlbOABAA!16s%2Fg%2F11bzq3hbyc?entry=ttu
+    fine_print: |
+      Discounted rate available for bookings for a minimum of 3 nights. Discount is up to 20% off of the published online rate for Deluxe Room categories and higher. As availability increases to near sellout levels, the rate may decrease. There will always be a form of discount available until all occupancy is unavailable. Rates may be extended 3 days before/after the event days, based on availability. An 8% resort fee and 11% lodging tax will be added to the quoted guestroom rate. Underground parking is available at $25 per vehicle per night.
   - block_id: hotel
     heading: Hotel Ketchum
     content: |
