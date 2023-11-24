@@ -378,7 +378,7 @@
 
   .road {fill: var(--colorContentPrimary);}
   .place {fill: var(--colorContentPrimary);
-   &.valley-club {fill: var(--colorTerraCotta);}
+   &.valley-club {fill: var(--colorGrape);}
   }
 
 } // end map
@@ -389,10 +389,15 @@
   .state-line, .road {fill: var(--colorContentPrimary);}
   .interstate-number {fill: var(--colorBackground);}
   .city-name {fill: var(--colorContentPrimary);}
-  .sun-valley {fill: var(--colorTerraCotta);}
+  .sun-valley {fill: var(--colorGrape);}
 
   @media (min-width: 767px) {
     margin-top: 4rem;
   }
 
 } // end atlas
+
+.vc_logo_small {max-width: 128px; margin-bottom: 1rem; margin-top: 1rem;}
+
+hr.at {height: 1px; border-top: 1px solid var(--colorGrape); width: 100%;}
+h4.when {background: var(--colorGrey200); color: var(--colorGrape); padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.625rem; text-transform: uppercase; width: max-content; margin: 0 auto;}

@@ -5,11 +5,14 @@ layout: default
 
   <header class="cover">
     <img src="{{ page.cover | relative_url }}" {% if page.cover_align %}class="{{ page.cover_align }}"{% endif %} />
+    {% comment %}
     {% if page.title == "When & Where" %}
     <h1 class="whenwhere">June Eighth<br /><span class="smaller">Twenty Twenty Four</span></h1>
     {% else %}
     <h1 class="">{{ page.title | escape }}</h1>
     {% endif %}
+    {% endcomment %}
+    <h1 class="">{{ page.title | escape }}</h1>
   </header>
 
 
@@ -20,6 +23,11 @@ layout: default
     {% if block.block_id == 'heading' %}
 
       <div class="heading-wrapper">
+        {% if block.is_when %}
+        <h4 class="when">When</h4>
+        {% elsif block.is_where %}
+        <h4 class="when">Where</h4>
+        {% endif %}
         <h2 class="{% if block.gradient %}gradient{% endif %}">{% if block.italic %}<em>{% endif %}{{ block.heading | escape }}{% if block.italic %}</em>{% endif %}</h2>
         {% if block.content %}
         {{ block.content | markdownify }}  
@@ -33,11 +41,16 @@ layout: default
 
     <h2 class="city {% if block.gradient %}gradient{% endif %}">{% if block.italic %}<em>{% endif %}{{ block.content | escape }}{% if block.italic %}</em>{% endif %}</h2>
   
+    {% elsif block.block_id == "divider" %}
+
+    <hr class="at" />
+
     {% elsif block.block_id == "hotel" %}
       <div class="hotel">
         <h3 class="hotel-heading">{{ block.heading }}{% if block.role %} <span class="role">{{ block.role }}</span>{% endif %}</h3>
         <p>{{ block.content | markdownify }}</p>
         {% if block.featured_hotel %}<p class="featured-text">{{ block.featured_hotel }}</p>{% endif %}
+        {% if block.is_valley_club == true %}<img class="vc_logo_small" src="../assets/images/company_logo.png" />{% endif %}
         {% if block.price %}<strong class="price">{{ block.price }}</strong>{% endif %}
         {% if block.website and block.website_link %}<div><a target="_blank" href="{{ block.website_link }}">{{ block.website }}</a></div>{% endif %}
         {% if block.address %}<div class="address"><strong>{{ block.address }}</strong>{% if block.address_link %}<a href="{{ block.address_link }}" target="_blank">View on map</a>{% endif %}</div> {% endif %}

@@ -16,7 +16,7 @@ blocks:
     heading: The Limelight
     featured: true
     content: | 
-      Our recommended hotel is the Limelight, found at the corner of Main St. and 4th in Ketchum. It's close to River Run, downtown Ketchum, and our venue. With an on-site bar and lounge, it's a great home base for all of the festivities.
+      Found at the corner of Main St. and 4th in Ketchum, the Limelight is close to River Run, downtown Ketchum, and our venue. With an on-site bar and lounge, it's a great home base for all of the festivities.
     featured_hotel: |
       The Limelight is also our preferred hotel for the event! Alyse &amp; Max will be staying there through the weekend, and we have a <strong>special discounted rate</strong> available for our guests. The hotel strongly encourages guests to call <a href="tel:(888)2183282" target="_blank">(888)218-3282</a> and mention <span class="" style="font-style:italic;">The Stark/Fronek Wedding</span> for the discount. You can also email <a href="mailto:ketchumreservations@limelighthotels.com" target="_blank">ketchumreservations@limelighthotels.com</a> or visit <a href="https://www.limelighthotels.com/ketchum/reservations#/booking/step-1?promo=STARKFRONEK" target="_blank">their booking website</a> to make your reservation.
     price: $$<span class="disabled">$$</span>
