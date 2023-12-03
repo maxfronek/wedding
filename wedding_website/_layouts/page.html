@@ -48,7 +48,16 @@ layout: default
     {% elsif block.block_id == "hotel" %}
       <div class="hotel">
         <h3 class="hotel-heading">{{ block.heading }}{% if block.role %} <span class="role">{{ block.role }}</span>{% endif %}</h3>
+        {% if block.picture %}
+        <div class="photo-wrap">
+          <img src="{{ block.picture }}" />
+            <div class="content-wrap">
+        {% endif %}
         <p>{{ block.content | markdownify }}</p>
+        {% if block.picture %}
+          </div><!-- end content-wrap -->
+        </div><!-- end photo-wrap -->
+        {% endif %}
         {% if block.featured_hotel %}<p class="featured-text">{{ block.featured_hotel }}</p>{% endif %}
         {% if block.is_valley_club == true %}<img class="vc_logo_small" src="../assets/images/company_logo.png" />{% endif %}
         {% if block.price %}<strong class="price">{{ block.price }}</strong>{% endif %}

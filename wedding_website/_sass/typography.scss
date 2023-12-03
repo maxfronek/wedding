@@ -100,7 +100,7 @@ h3 {
 .disclaimer {color: var(--colorContentSecondary); font-size: 0.75rem; text-align: center; margin-top: 4rem;}
 .fine-print {color: var(--colorContentSecondary); font-size: 0.75rem; font-style: italic; line-height: 1.5; display: block; max-width: 640px; margin-top: 2rem;}
 
-.role {color: var(--colorContentSecondary); font-size: 75%;}
+.role {color: var(--colorContentSecondary); font-size: 75%; display: inline-block;}
 .disabled {color: var(--colorContentSecondary);}
 
 .featured-text {padding: 1rem; border-radius: 8px; outline: 2px dotted var(--colorGrape); /* outline-offset: 0.5rem; background: var(--colorGrey100); */}
