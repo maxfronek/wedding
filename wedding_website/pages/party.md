@@ -11,6 +11,22 @@ blocks:
 #    img_url: |
 #      https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&q=80&w=2670&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D  
   - block_id: city
+    content: Officiants
+  - block_id: hotel
+    heading: Sophia Dilley
+    content: |
+        Sophia and Alyse go way, way back – we're talking elementary school dance classes, where their collective lack of grace meant they were forever banished to the back row and pink outfits. Yet, their shining moment emerged when they took the stage as Tweedle Dee and Tweedle Dum, tapping their way into the hearts of everyone in the audience!
+
+        Their friendship has been a wild ride, filled with endless nights and weekends spent at each other's childhood homes, perfecting the fine art of prank calling and creating ridiculous home videos (remember the I.N. 🙂). Alyse has always admired Sophia's unstoppable drive and sense of humor, and promises <strong>never</strong> to tell anyone about their early 2000's reenactments of music [videos](#){:data-tooltip="Whoops"}.
+    picture: /assets/images/party/sophia.jpg
+  - block_id: hotel
+    heading: Samantha Fronek
+    content: |
+      Max has known Sam for literally his whole life, and even though she says things were better before he came around, that's probably not true. Through family vacations and Christmas board games, refusing to buy Max beer when he was in high school, and road trips through California, Iceland, and beyond, Sam's been the perfect example of a big sister.
+
+      Though they live thousands of miles apart, Sam's just a phone call away for a reassuring word, Jeff Goldblum joke, or just a chat. Max is so happy she can be part of today and hopes she won't share too many embarrassing childhood stories.
+    picture: /assets/images/party/sam.jpg
+  - block_id: city
     content: Bridal Party
   - block_id: hotel
     heading: Maggie Daucsavage
@@ -45,33 +61,31 @@ blocks:
     role: Best Mel
     content: |
       Max has known Melissa since they day he set foot in Los Angeles. From their first trip to [Porto's together](https://portosbakery.com/){:data-tooltip="He's still thankful for that introduction, especially the potato croquette and medianoche sandwich" target="_blank"} they became fast friends, in no small part thanks to Melissa's excellent ability to give the perfect piece of advice at any time (and also find the best parking spot). Through tons of experiences, from finding the perfect midcentury furniture to resume and job interview coaching, walking through Dia de los Muertos festivals and Melissa's engagement photoshoot, their friendship has grown and grown. After living together in West Hollywood, Max and Melissa established an even closer bond that can only be described as "roombas". He's so happy to have her standing up there as he starts the next part of his life. 
+    picture: /assets/images/party/mel.jpg
   - block_id: hotel
     heading: Raj Sharma
     content: |
-      Max met Raj on the beach before he'd even moved to LA, and they quickly bonded over a shared love of music and travel. From Iceland and Alaska to closer trips like Joshua Tree, they've seen a good slice of the world together and Raj's sense of humor has kept them laughing all the way. Now, even their dogs are friends.
+      Max met Raj on the beach before he'd even moved to LA, and they quickly bonded over a shared love of music and travel. From Iceland and Alaska to closer trips like Joshua Tree, they've seen a good slice of the world together and Raj's sense of humor has kept them laughing all the way. Now, even their dogs are friends. Well, [Raj's Dog](https://instagram.com/curiethetripawd){:data-tooltip="Curie, the world's cutest tri-pawd"} tolerates Ellie, anyways.
+    picture: /assets/images/party/raj.jpg
   - block_id: hotel
-    heading: KJ Hanna
+    heading: Peter Daucsavage
     content: |
-      Max met KJ when he crashed a Santa Barbara anniversary trip between KJ and his wife, Elizabeth. Despite the rude start, the two of them quickly bonded over a shared love of great beers and the Green Bay Packers. As KJ tried in vain to help Max's fantasy team (some things just can't be saved) their bond grew and their freindship became stronger. 
-      
-      Through long nights of great food, an eipc trip to Japan, and KJ starting his family, they've kept their friendship strong. Max is excited to have KJ standing next to him as he and Alyse start their life together.
-    picture: /assets/images/party/KJ.jpg
+      Peter and Max met shortly after Alyse &amp; Max started dating, and became fast friends right away. Pete and Alyse had been friends since their freshman year of college and have experience the highs and lows of LA together. Pete's always quick with a kind word or a subtle joke (usually the kind that flies under the radar for a second) and is the kind of person you want to be around. Through many rounds of golf, parties, and backyard movies, they've grown closer through the last few years and Max couldn't be happier to have Pete stading up with him on this day.
+    picture: /assets/images/party/pete-1.jpg
   - block_id: city
-    content: Officiants
+    content: Wedding Party
   - block_id: hotel
-    heading: Sophia Dilley
+    heading: Andrew Tolbert
+    role: Flower Man
     content: |
-        Sophia and Alyse go way, way back – we're talking elementary school dance classes, where their collective lack of grace meant they were forever banished to the back row and pink outfits. Yet, their shining moment emerged when they took the stage as Tweedle Dee and Tweedle Dum, tapping their way into the hearts of everyone in the audience!
-
-        Their friendship has been a wild ride, filled with endless nights and weekends spent at each other's childhood homes, perfecting the fine art of prank calling and creating ridiculous home videos (remember the I.N. 🙂). Alyse has always admired Sophia's unstoppable drive and sense of humor, and promises <strong>never</strong> to tell anyone about their early 2000's reenactments of music [videos](#){:data-tooltip="Whoops"}.
-    picture: /assets/images/party/sophia.jpg
+        Andrew and Alyse met when she moved to LA. Their shared passion of musical theatre, dance, Bravo!, and wine tastings made them fast friends, and every time they get together is full of laughs and gossip. Whether its at <em>Closechella™</em> parties in Palm Springs or pool parties in the Canyon, it's always a good time. Max still remembers talking into the night in a share house complete with an entire room full of crosses and a Geronimo pillow.
+    picture: /assets/images/party/andrew-t-2.jpg
   - block_id: hotel
-    heading: Samantha Fronek
+    heading: Eli Stark
+    role: Ringbearer
     content: |
-      Max has known Sam his whole life, and even though she says things were better before he came around, that's probably not true. Through family vacations and Christmas board games, refusing to buy Max beer when he was in high school, and road trips through California, Iceland, and beyond, Sam's been the perfect example of a big sister.
-
-      Though they live thousands of miles apart, Sam's just a phone call away for a reassuring word, Jeff Goldblum joke, or just a chat. Max is so happy she can be part of today and hopes she won't share too many embarrassing childhood stories.
-    picture: /assets/images/party/sam.jpg
+        Eli is Alyse's 10-year-old nephew. He likes dinosaurs, video games, and winning at any game he brings to a party. Eli's got a big job ahead of him at the wedding but we know he'll do an amazing job bringing the rings down the aisle.
+    picture: /assets/images/party/eli.jpg
    
 
 ---

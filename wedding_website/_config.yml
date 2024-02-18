@@ -27,12 +27,13 @@ url: "https://alyseandmax.com" # the base hostname & protocol for your site, e.g
 # twitter_username: jekyllrb
 github_username:  maxfronek
 
-logo: "./assets/images/logos/monogram-AM-4.svg"
+logo: "./assets/images/logos/AM_horizontal_lockup_2.svg"
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
 
 permalink: pretty
 

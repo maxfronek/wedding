@@ -22,9 +22,9 @@
 
 
 
-.logo-monogram {width: 48px; height: auto; transition: 1s all ease-in-out;
+.logo-monogram {width: 96px; height: auto; transition: 1s all ease-in-out;
 
-    @media (min-width: 1200px) {width: 64px;}
+    @media (min-width: 1200px) {width: 128px;}
 
     &.reversed {filter: invert(1);}
 

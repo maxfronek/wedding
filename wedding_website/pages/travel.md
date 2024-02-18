@@ -17,7 +17,7 @@ blocks:
   - block_id: hotel
     heading: Boise (BOI)
     content: |
-      <strong>~2 hour drive</strong> Boise is the closest major airport, and has many flights from aound the country. You'll also have access to plentful rental car options.
+      <strong>~2 hour drive</strong> Boise is the closest major airport, and has many flights from around the country. You'll also have access to plentful rental car options.
   - block_id: hotel
     heading: Salt Lake City (SLC)
     content: |
