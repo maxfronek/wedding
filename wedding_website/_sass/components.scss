@@ -66,6 +66,10 @@
 
             &.show {opacity: 1;}
 
+            .linklist--internal_block {display: block; min-width: 100%; min-height: 100%; opacity: .24;
+                &.gradient {-webkit-background-clip: initial; -webkit-text-fill-color: transparent; margin-top: 0; margin-left: 0;}
+            }
+
         }
     
         a {

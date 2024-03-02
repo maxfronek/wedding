@@ -34,4 +34,4 @@ blocks:
 
 {% include sunvalley-map.html %}
 
-<p class="disclaimer">More details about Sun Valley and our venue will be added in the days to come.</p>
+<p class="disclaimer">Want to know more about the weekend and what else to do in Sun Valley? <a href="/things-to-do/">Check out our page covering the weekend's events!</a></p>

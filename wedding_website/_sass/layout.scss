@@ -422,3 +422,17 @@
 hr.at {height: 1px; border-top: 1px solid var(--colorGrape); width: 100%;}
 h4.when {background: var(--colorGrey200); color: var(--colorGrape); padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.625rem; text-transform: uppercase; width: max-content; margin: 0 auto;}
 
+
+.subheading-place, .subheading-name {display: block; text-transform: uppercase; letter-spacing: 0.1rem;}
+
+
+.masonry-gallery {
+  width: calc(100% - 2rem); max-width: 1168px;
+  &__item { width: 25%; 
+  
+    &.width__2 {width: 50%;}
+    &.width__3 {width: 75%;}
+    &.width__4 {width: 100%;}
+
+  }
+}

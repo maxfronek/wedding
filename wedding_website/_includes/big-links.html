@@ -20,24 +20,28 @@
             <div class="big-links__linktext">Travel</div>
             {% include linklist--travel.html %}
         </a></li>
-        <li><a  href="/wedding-party/">
+        <li><a href="/wedding-party/">
             <div class="big-links__linktext">Wedding Party</div>
             {% include linklist--party.html %}
         </a></li>
-        <li><a class="disabled" {% comment %}href="/things-to-do/"{% endcomment %}>
-            <div class="big-links__linktext">Things to do <span class="coming-soon">Coming Soon</span></div>
-            {% comment %}{% include linklist--things.html %}{% endcomment %}
+        <li><a href="/rsvp/">
+            <div class="big-links__linktext">RSVP</div>
+            {% include linklist--default.html %}
         </a></li>
-        <li><a href="#" class="disabled">
-            <div class="big-links__linktext">Music <span class="coming-soon">Coming Soon</span></div>
-        </a></li>
-        <li><a href="#" class="disabled">
-            <div class="big-links__linktext">RSVP <span class="coming-soon">Coming Soon</span></div>
-        </a></li>
-        <li><a href="#" class="disabled">
-            <div class="big-links__linktext">Registry<span class="coming-soon">Coming Soon</span></div>
+        <li><a href="/registry/">
+            <div class="big-links__linktext">Registry</div>
+            {% include linklist--default.html %}
         </a>
         </li>
+        <li><a href="/things-to-do/">
+            <div class="big-links__linktext">Weekend Events</div>
+            {% include linklist--things.html %}
+        </a></li>
+        <li><a href="/gallery/">
+            <div class="big-links__linktext">Gallery <span class="coming-soon">Coming Soon</span></div>
+            {% include linklist--default.html %}
+        </a></li>
+
 
 
     </ul>

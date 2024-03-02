@@ -4,9 +4,9 @@ body {font-family: var(--fontMain); font-weight: 500;}
 
 body, div, p, ol, ul, h1, h2, h3, h4, h5, h6 {color: var(--colorContentPrimary);}
 
-a, a:visited {color: var(--colorGrape); transition: .15s all ease-in-out;
+a, a:visited {color: var(--colorGrape); transition: .15s all ease-in-out; text-underline-offset: 2px;
 
-    &:hover, &:focus {color: var(--colorContentPrimary); text-decoration-color: var(--colorGrape);}
+    &:hover, &:focus {color: var(--colorContentPrimary); text-decoration-color: var(--colorGrape); text-underline-offset: 4px;}
 }
 
 ::selection {
