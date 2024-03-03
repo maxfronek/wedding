@@ -12,6 +12,7 @@ blocks:
 #      https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&q=80&w=2670&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D  
   - block_id: city
     content: Officiants
+    gradient: true
   - block_id: hotel
     heading: Sophia Dilley
     content: |
@@ -22,19 +23,20 @@ blocks:
   - block_id: hotel
     heading: Samantha Fronek
     content: |
-      Max has known Sam for literally his whole life, and even though she says things were better before he came around, that's probably not true. Through family vacations and Christmas board games, refusing to buy Max beer when he was in high school, and road trips through California, Iceland, and beyond, Sam's been the perfect example of a big sister.
+      Max has known Sam for literally his whole life, and even though she says things were better before he came around, that's probably not true. Through family vacations and Christmas board games, refusing to buy Max beer when he was in high school, and road trips through California, Iceland, and beyond, Sam's been the best big sister possible...most of the time.
 
-      Though they live thousands of miles apart, Sam's just a phone call away for a reassuring word, Jeff Goldblum joke, or just a chat. Max is so happy she can be part of today and hopes she won't share too many embarrassing childhood stories.
+      Though they now live half a country apart, Sam's just a phone call away for a reassuring word, Jeff Goldblum-related joke, or just a chat. Max is so happy she can be part of today and hopes she won't share too many embarrassing childhood stories.
     picture: /assets/images/party/sam.jpg
   - block_id: city
     content: Bridal Party
+    gradient: true
   - block_id: hotel
     heading: Maggie Daucsavage
     role: Co-Maid of Honor
     content: | 
       Maggie Dausavage has been a consistently vibrant force in Alyse's life since they met over ten years ago (right after Alyse moved to LA).  Even though Maggie made the mistake of [buying her sunflowers](https://www.epipen.com/en){:data-tooltip="ALLERGIES! Bring the epi-pen"} early on, they became fast friends. They shared countless mimosa-fueled brunches along with nights out where neither wanted to call it—they’re pretty similar that way. 
 
-      Maggie's infectious energy lights up every room she enters, and even though everyone has to share her with her new baby, Maya, it’s OK. Alyse was honored to be a part of her wedding day, and is thrilled to have her return the favor as she embarks on her own journey.
+      Maggie's infectious energy lights up every room she enters, and her new baby, Maya, is following right in her footsteps. Alyse was honored to be a part of Maggie's wedding day, and is thrilled to have Maggie standing by her side to laugh (and most likely cry) throughout this special day.
     picture: /assets/images/party/maggie.jpg
   - block_id: hotel
     heading: Hannah Grotbo
@@ -49,13 +51,14 @@ blocks:
     content: |
       Adelaide and Alyse danced together growing up, and even though Adelaide was always the teacher's favorite, the two of them always had many laughs walking to [dance class](#){:data-tooltip="PEN15"}. Adelaide has always been fearless and taken risks, like spending a year abroad in Italy while the rest of us were in boring regular high school.
 
-      Though there's a lot more distance between them these days, and Adelaide's busy running [Sun Valley's best Italian restaurant](https://www.ketchum-enoteca.com/){:data-tooltip="Enoteca!" target="_blank"} and raising her chickens, they still enjoy every second they can get together. Alyse has been overjoyed to watch Adelaide become a wife and a mom, and can't wait to have her standing with her on the big day.
+      Though there's a lot more distance between them these days, and Adelaide's busy running [Sun Valley's best Italian restaurant](https://www.ketchum-enoteca.com/){:data-tooltip="Enoteca!" target="_blank"} and raising her chickens, they still enjoy every second they can get together. Alyse has been overjoyed to watch Adelaide become a wife and a madre, and can't wait to have her standing with her on the big day.
     picture: "/assets/images/party/adelaide-2.jpg"
 #  - block_id: image
 #    img_url: |
 #      https://images.unsplash.com/photo-1600276076396-8b0ef9ca8de6?auto=format&fit=crop&q=80&w=2671&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   - block_id: city
     content: Groomsmen
+    gradient: true
   - block_id: hotel
     heading: Melissa Sanchez
     role: Best Mel
@@ -78,7 +81,7 @@ blocks:
     heading: Andrew Tolbert
     role: Flower Man
     content: |
-        Andrew and Alyse met when she moved to LA. Their shared passion of musical theatre, dance, Bravo!, and wine tastings made them fast friends, and every time they get together is full of laughs and gossip. Whether its at <em>Closechella™</em> parties in Palm Springs or pool parties in the Canyon, it's always a good time. Max still remembers talking into the night in a share house complete with an entire room full of crosses and a Geronimo pillow.
+        Andrew and Alyse met when she moved to LA. Their shared passion of musical theatre, dance, Bravo!, and wine tastings made them fast friends, and every time they get together is full of laughs and gossip. Whether its at <em>Closechella™</em> parties in Palm Springs or pool parties in the Canyon, it's always a good time. Max still remembers talking into the night in a shared house complete with an entire room full of&nbsp;crosses.
     picture: /assets/images/party/andrew-t-2.jpg
   - block_id: hotel
     heading: Eli Stark

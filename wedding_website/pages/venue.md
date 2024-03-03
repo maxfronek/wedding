@@ -25,6 +25,10 @@ blocks:
 #      - img_url: "./assets/images/vc/valleyclub-4.jpg"
 #        alt: The Valley Club
   - block_id: hotel
+    heading: Shuttles
+    content: |
+      Shuttles will depart from the backside of the Limelight Hotel in Ketchum and the Fairfield Inn & Suites in Hailey at 4:15 PM. Parking at the venue is also available. Shuttles will return to the drop-off points at 10:00 PM and at 12 midnight. Announcements will be made during the reception to let you know when the shuttles are ready to depart.
+  - block_id: hotel
     heading: Venue Details
     content: |
       A beautiful 205 acre club nestled in the Sawtooth mountains, The Valley Club is a centrally located, stunning venue between Hailey and Ketchum. Our ceremony, reception, and dance party will be self-contained, and we'll have shuttle service procided to Ketchum and Hailey. Bring your dancing shoes and prepare for a one-of-a-kind night in the mountains.

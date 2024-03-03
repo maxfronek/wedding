@@ -427,12 +427,22 @@ h4.when {background: var(--colorGrey200); color: var(--colorGrape); padding: 0.2
 
 
 .masonry-gallery {
-  width: calc(100% - 2rem); max-width: 1168px;
-  &__item { width: 25%; 
+  width: calc(100% - 2rem); max-width: 1168px; margin: 0 auto;
+
+  &__sizer {width: calc(25% - 16px);}
+
+  &__item {width: calc(50% - 16px); margin-bottom: 16px; 
   
-    &.width__2 {width: 50%;}
-    &.width__3 {width: 75%;}
-    &.width__4 {width: 100%;}
+    &.width__2 {width: calc(50% - 16px);}
+    &.width__3 {width: calc(100% - 16px);}
+    &.width__4 {width: calc(100% - 32px);}
+
+    @media (min-width: 767px) {
+      width: calc(25% - 16px);
+
+      &.width__3 {width: calc(75% - 16px);}
+
+    }
 
   }
 }

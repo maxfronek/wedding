@@ -91,7 +91,8 @@ layout: default
 
     {% elsif block.block_id == 'masonry' %}
 
-    <div class="masonry-gallery">
+    <div class="masonry-gallery" id="masonry_gallery">
+      <div class="masonry-gallery__sizer"></div>
       {% for image in block.images %}
         <div class="masonry-gallery__item {% if image.span %}width__{{ image.span }}{% endif %}">
           <img src="{{ image.image_src }}" alt="{{ image.alt }}" />

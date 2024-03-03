@@ -93,4 +93,24 @@ let galleryExists = false;
     }
 
 
+  // gallery page masonry
 
+  let masonryExists = false;
+
+  let masonryGallery = document.getElementById('masonry_gallery');
+
+  if (masonryGallery) {
+    masonryExists = true;
+    console.log("There is a masonry gallery on-page")
+
+            var msnry = new Masonry( masonryGallery, {
+            // options
+            itemSelector: '.masonry-gallery__item',
+            columnWidth: '.masonry-gallery__sizer',
+            percentPosition: true,
+            gutter: 16
+            // fitWidth: true
+});
+
+
+  }

@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Things to Do"
+title:  "Weekend Events"
 date:   2023-10-07 15:03:50 -0700
 permalink: /things-to-do/
 cover: "https://www.alexinwanderland.com/wp-content/uploads/2020/12/SunValley_003.jpg"
@@ -8,6 +8,7 @@ cover_align: bottom-center
 blocks:
   - block_id: city
     content: Planned Events
+    gradient: true
   - block_id: hotel
     heading: Friday, 6/7
     picture: /assets/images/whiskeys.webp
@@ -25,7 +26,7 @@ blocks:
       subheading_time: Starting at 5:00 PM
       subheading_place: The Valley Club
     content: |
-      It all happens here! Shuttles will depart from the Limelight in Ketchum and the Fairfield Inn & Suites in Hailey at 4:15 PM. Parking at the venue is also available. Shuttles will return to the drop-off points at 10:00 PM and at 12 midnight. Bring your dancing shoes and get ready for a celebration!<br /><br />[The Valley Club website](https://thevalleyclub.org/){:data-tooltip="Get a sneak peek of the club"}<br /><strong>100 Club View Circle, Hailey, ID</strong>
+      It all happens here! Shuttles will depart from the backside of the Limelight Hotel in Ketchum and the Fairfield Inn & Suites in Hailey at 4:15 PM. Parking at the venue is also available. Shuttles will return to the drop-off points at 10:00 PM and at 12 midnight. Bring your dancing shoes and get ready for a celebration!<br /><br />[The Valley Club website](https://thevalleyclub.org/){:data-tooltip="Get a sneak peek of the club"}<br /><strong>100 Club View Circle, Hailey, ID</strong>
   - block_id: hotel
     heading: Sunday, 6/9
     picture: /assets/images/joannes.webp
@@ -35,8 +36,12 @@ blocks:
       subheading_place: Joanne's House
     content: |
       We'd love to see you before you leave town! Meet us at Joanne's for a some light refreshments, a goodbye mimosa, and a hug. A low-stress recovery to end a great weekend.<br /><br /><strong>90 Stone Bridges Rd., Hailey, ID</strong>
+
+--- 
+<!--       
   - block_id: city
     content: More to do
+    gradient: true
   - block_id: hotel
     heading: Enoteca
     content: | 
@@ -65,9 +70,4 @@ blocks:
     website_link: https://www.wrapcitycafe.com/
     address: 180 South Main Street, Ketchum, ID 83340
 
-
-
-
-
-    
----
+-->
