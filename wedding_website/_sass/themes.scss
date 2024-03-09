@@ -33,7 +33,15 @@
         background-color: var(--colorGrape);
       }
 
+    .vc_logo_small {filter: invert(1);}
 
+    h4 {
+        &.when {background: var(--colorGrey600);}
+    }
+
+    .weekend-events {
+        .photo-wrap img {filter: invert(1);}
+    }
 
 }
 
@@ -119,6 +127,7 @@
   }
 
 } // end terracotta theme
+
 
 
 

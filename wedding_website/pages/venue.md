@@ -33,9 +33,11 @@ blocks:
     content: |
       A beautiful 205 acre club nestled in the Sawtooth mountains, The Valley Club is a centrally located, stunning venue between Hailey and Ketchum. Our ceremony, reception, and dance party will be self-contained, and we'll have shuttle service procided to Ketchum and Hailey. Bring your dancing shoes and prepare for a one-of-a-kind night in the mountains.
     is_valley_club: true
+  - block_id: hotel
+    heading: Weekend Events
+    content: |
+      We've got a great plan for the weekend — [learn more about everything on the schedule!](/things-to-do/)
 
 ---
 
 {% include sunvalley-map.html %}
-
-<p class="disclaimer">Want to know more about the weekend and what else to do in Sun Valley? <a href="/things-to-do/">Check out our page covering the weekend's events!</a></p>

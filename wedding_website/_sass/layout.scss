@@ -433,6 +433,8 @@ h4.when {background: var(--colorGrey200); color: var(--colorGrape); padding: 0.2
 
   &__item {width: calc(50% - 16px); margin-bottom: 16px; 
   
+    img {cursor: zoom-in;}
+
     &.width__2 {width: calc(50% - 16px);}
     &.width__3 {width: calc(100% - 16px);}
     &.width__4 {width: calc(100% - 32px);}

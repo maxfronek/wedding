@@ -1,0 +1,32 @@
+// lightGallery overrides
+
+// counter
+.lg-counter {color: var(--colorSage);}
+
+// background
+.lg-backdrop {background: rgba(225,225,225,0.72); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px);}
+
+// buttons
+.lg-next, .lg-prev {background-color: rgba(225,225,225,0); color: var(--colorSage); transition: .15s all ease-in-out;
+    &:hover:not(.disabled), &:focus:not(.disabled) {color: var(--colorGrape);}
+}
+
+.lg-toolbar .lg-icon {
+    color: var(--colorSage); transition: .15s all ease-in-out;
+    &:hover:not(.disabled), &:focus:not(.disabled) {color: var(--colorGrape);}
+}
+
+// image container
+.lg-item {max-height: calc(100% - 1rem);}
+.lg-img-wrap img {border-radius: 4px; -webkit-box-shadow: 4px 4px 16px rgba(25,25,25,.32); box-shadow: 4px 4px 16px rgba(25,25,25,.32);}
+@media (min-width: 768px) {
+    .lg-item {max-height: calc(100% - 2rem);}
+}
+
+
+
+// dark mode
+@media (prefers-color-scheme: dark) {
+    .lg-backdrop {background: rgba(25,25,25,0.72);}
+    .lg-next, .lg-prev {background-color: rgba(225,225,225,0); color: var(--colorGrape);}
+}

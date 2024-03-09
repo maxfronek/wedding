@@ -42,13 +42,13 @@ if (tooltipLinks != null || tooltipLinks != undefined) {
 
 let galleryExists = false;
 
-    if (document.querySelector('.gallery')) {
+    if (document.querySelector('.swiper-gallery')) {
       galleryExists = true
     }
 
     if (galleryExists == true) {
 
-      let galleries = document.querySelectorAll('.gallery');
+      let galleries = document.querySelectorAll('.swiper-gallery');
 
       galleries.forEach((gallery) => {
 
@@ -94,23 +94,35 @@ let galleryExists = false;
 
 
   // gallery page masonry
+  document.addEventListener('DOMContentLoaded', function () {
+    let masonryExists = false;
 
-  let masonryExists = false;
+    let masonryGallery = document.getElementById('masonry_gallery');
+  
+    if (masonryGallery) {
+      masonryExists = true;
+      console.log("There is a masonry gallery on-page")
+  
+              var msnry = new Masonry( masonryGallery, {
+              // options
+              itemSelector: '.masonry-gallery__item',
+              columnWidth: '.masonry-gallery__sizer',
+              percentPosition: true,
+              gutter: 16
+              // fitWidth: true
+  });
+  
+    } // end if masonry gallery
+  }, false);
 
-  let masonryGallery = document.getElementById('masonry_gallery');
+  let lightgalleryExists = false,
+  pageGallery = document.getElementById('masonry_gallery');
 
-  if (masonryGallery) {
-    masonryExists = true;
-    console.log("There is a masonry gallery on-page")
-
-            var msnry = new Masonry( masonryGallery, {
-            // options
-            itemSelector: '.masonry-gallery__item',
-            columnWidth: '.masonry-gallery__sizer',
-            percentPosition: true,
-            gutter: 16
-            // fitWidth: true
-});
-
-
+  if (pageGallery) {
+    lightGallery(pageGallery, {
+      selector: '.lg-image',
+      speed: 500,
+      // ... other settings
+  });
   }
+

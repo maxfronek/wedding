@@ -11,23 +11,6 @@ blocks:
 #    img_url: |
 #      https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&q=80&w=2670&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D  
   - block_id: city
-    content: Officiants
-    gradient: true
-  - block_id: hotel
-    heading: Sophia Dilley
-    content: |
-        Sophia and Alyse go way, way back – we're talking elementary school dance classes, where their collective lack of grace meant they were forever banished to the back row and pink outfits. Yet, their shining moment emerged when they took the stage as Tweedle Dee and Tweedle Dum, tapping their way into the hearts of everyone in the audience!
-
-        Their friendship has been a wild ride, filled with endless nights and weekends spent at each other's childhood homes, perfecting the fine art of prank calling and creating ridiculous home videos (remember the I.N. 🙂). Alyse has always admired Sophia's unstoppable drive and sense of humor, and promises <strong>never</strong> to tell anyone about their early 2000's reenactments of music [videos](#){:data-tooltip="Whoops"}.
-    picture: /assets/images/party/sophia.jpg
-  - block_id: hotel
-    heading: Samantha Fronek
-    content: |
-      Max has known Sam for literally his whole life, and even though she says things were better before he came around, that's probably not true. Through family vacations and Christmas board games, refusing to buy Max beer when he was in high school, and road trips through California, Iceland, and beyond, Sam's been the best big sister possible...most of the time.
-
-      Though they now live half a country apart, Sam's just a phone call away for a reassuring word, Jeff Goldblum-related joke, or just a chat. Max is so happy she can be part of today and hopes she won't share too many embarrassing childhood stories.
-    picture: /assets/images/party/sam.jpg
-  - block_id: city
     content: Bridal Party
     gradient: true
   - block_id: hotel
@@ -75,6 +58,23 @@ blocks:
     content: |
       Peter and Max met shortly after Alyse &amp; Max started dating, and became fast friends right away. Pete and Alyse had been friends since their freshman year of college and have experience the highs and lows of LA together. Pete's always quick with a kind word or a subtle joke (usually the kind that flies under the radar for a second) and is the kind of person you want to be around. Through many rounds of golf, parties, and backyard movies, they've grown closer through the last few years and Max couldn't be happier to have Pete stading up with him on this day.
     picture: /assets/images/party/pete-1.jpg
+  - block_id: city
+    content: Officiants
+    gradient: true
+  - block_id: hotel
+    heading: Sophia Dilley
+    content: |
+        Sophia and Alyse go way, way back – we're talking elementary school dance classes, where their collective lack of grace meant they were forever banished to the back row and pink outfits. Yet, their shining moment emerged when they took the stage as Tweedle Dee and Tweedle Dum, tapping their way into the hearts of everyone in the audience!
+
+        Their friendship has been a wild ride, filled with endless nights and weekends spent at each other's childhood homes, perfecting the fine art of prank calling and creating ridiculous home videos (remember the I.N. 🙂). Alyse has always admired Sophia's unstoppable drive and sense of humor, and promises <strong>never</strong> to tell anyone about their early 2000's reenactments of music [videos](#){:data-tooltip="Whoops"}.
+    picture: /assets/images/party/sophia.jpg
+  - block_id: hotel
+    heading: Samantha Fronek
+    content: |
+      Max has known Sam for literally his whole life, and even though she says things were better before he came around, that's probably not true. Through family vacations and Christmas board games, refusing to buy Max beer when he was in high school, and road trips through California, Iceland, and beyond, Sam's been the best big sister possible...most of the time.
+
+      Though they now live half a country apart, Sam's just a phone call away for a reassuring word, Jeff Goldblum-related joke, or just a chat. Max is so happy she can be part of today and hopes she won't share too many embarrassing childhood stories.
+    picture: /assets/images/party/sam.jpg
   - block_id: city
     content: Wedding Party
   - block_id: hotel

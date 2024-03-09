@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<article class="post">
+<article class="post  {{ page.title | slugify }}">
 
   <header class="cover">
     <img src="{{ page.cover | relative_url }}" {% if page.cover_align %}class="{{ page.cover_align }}"{% endif %} />
@@ -75,7 +75,7 @@ layout: default
 
     {% elsif block.block_id == "gallery" %}
       <!-- Slider main container -->
-      <div class="swiper gallery" data-galleryId="{{ block.gallery_id }}">
+      <div class="swiper swiper-gallery" data-galleryId="{{ block.gallery_id }}">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
@@ -95,7 +95,7 @@ layout: default
       <div class="masonry-gallery__sizer"></div>
       {% for image in block.images %}
         <div class="masonry-gallery__item {% if image.span %}width__{{ image.span }}{% endif %}">
-          <img src="{{ image.image_src }}" alt="{{ image.alt }}" />
+          <img src="{{ image.image_src }}" alt="{{ image.alt }}" class="lg-image"/>
         </div>
       {% endfor %}
     </div>
