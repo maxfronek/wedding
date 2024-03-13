@@ -35,7 +35,7 @@ blocks:
       subheading_time: 10:00 AM - 1:00 PM
       subheading_place: Joanne's House
     content: |
-      We'd love to see you before you leave town! Meet us at Joanne's for a some light refreshments, a goodbye mimosa, and a hug. A low-stress recovery to end a great weekend.<br /><br /><strong>90 Stone Bridges Rd., Hailey, ID</strong>
+      We'd love to see you before you leave town! Meet us at Joanne's for some light refreshments, a goodbye mimosa, and a hug. A low-stress recovery to end a great weekend.<br /><br /><strong>90 Stone Bridges Rd., Hailey, ID</strong>
 
 --- 
 <!--       
