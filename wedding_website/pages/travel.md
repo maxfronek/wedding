@@ -23,6 +23,14 @@ blocks:
     heading: Salt Lake City (SLC)
     content: |
       <strong>~4 hour drive</strong> Salt Lake City is the next closest major airport, but is a further drive. At least there won't be snow! (Hopefully).
+  - block_id: city
+    content: Car Rental Discount
+    gradient: true
+  - block_id: hotel
+    featured: true
+    featured_hotel: |
+      If you're using Hertz to book a rental car, we're happy to share a <strong>25% discount code</strong>! Just enter <a href="https://links1-eml.withjoy.com/u/click?_t=6bcf48eff34d4c60853777199152eea6&_m=8cec9beebe6a4605aaaed96086e8d3fa&_e=X69jRyzb9S8zvOXpDkec-cjEyOqvWjW-_4wvL2cEh8o3Wyu7UDeqO9m0xpsR22pm7xxl5D1C7utvXGq5zpaTRhzGvZs5wE8C3liCcQDYoBSRvvnJwWh3EcICv_mJK0OqyL2MMaumOwcwYOLvSJzU03E7-dm352WMoSr5fMQ_e219qhb2ZB9_4n_0wGzv1-QPlf-IesEwcyF9ryaWRKmZ_nu7MVmrJ0S-bMM7k6zc3xptEYt0OlZu6j7ryingIZybK0J23Fob2BvSdifa4S5GtQ%3D%3D" target="_blank"><strong>2269659</strong></a> to see your discounted rate on checkout. <a href="https://links1-eml.withjoy.com/u/click?_t=6bcf48eff34d4c60853777199152eea6&_m=8cec9beebe6a4605aaaed96086e8d3fa&_e=X69jRyzb9S8zvOXpDkec-cjEyOqvWjW-_4wvL2cEh8o3Wyu7UDeqO9m0xpsR22pm7xxl5D1C7utvXGq5zpaTRhzGvZs5wE8C3liCcQDYoBSRvvnJwWh3EcICv_mJK0OqyL2MMaumOwcwYOLvSJzU03E7-dm352WMoSr5fMQ_e219qhb2ZB9_4n_0wGzv1-QPlf-IesEwcyF9ryaWRKmZ_nu7MVmrJ0S-bMM7k6zc3xptEYt0OlZu6j7ryingIZybK0J23Fob2BvSdifa4S5GtQ%3D%3D" target="_blank">Get started</a>.
+
 ---
 
 {% include atlas.html %}
